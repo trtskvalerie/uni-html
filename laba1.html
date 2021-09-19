@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="HTML, HTML5, Semantic HTML, Semantic Elements, HTML Tutorial, HTML Elements">
+    <meta name="description" content="Tutorial on semantic elements in HTML">
+    <meta name="author" content="Valerie Troitska">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Semantic Elements</title>
+
+    <style>
+        body {margin: 5% 15% 5% 15%;}
+        img {display: block;
+             margin-left: auto;
+             margin-right: auto;
+             width: auto;}
+        table {width: 100%;
+               padding: 5px;
+               border-collapse: collapse;}
+        th {font-weight: bold;
+            text-align: left;
+            border: 1px solid black;
+            padding: 5px;}
+        td {padding: 3px;
+            border: 1px solid black;}
+        .col1 {column-width: 25%;}
+    </style>
+</head>
+<body>
+    <h1>HTML Semantic Elements</h1>
+
+    <hr>
+    <p>Semantic elements = elements with a meaning.</p>
+    <hr>
+
+    <h2>What are Semantic Elements?</h2>
+
+    <p>A semantic element clearly describes its meaning to both the browser and the developer.</p>
+    <p>Examples of non-semantic elements: &lt;div&gt; and &lt;span&gt; - Tells nothing about its content.</p>
+    <p>Examples of semantic elements: &lt;form&gt;, &lt;table&gt;, and &lt;article&gt; - Clearly defines its content.</p>
+    <hr>
+
+    <h2>Semantic Elements in HTML</h2>
+
+    <p>Many web sites contain HTML code like: &lt;div id="nav"&gt; &lt;div class="header"&gt; &lt;div id="footer"&gt; to indicate navigation, header, and footer.</p>
+    <img src="https://www.w3schools.com/html/img_sem_elements.gif" alt="HTML page structure">
+    <p>In HTML there are some semantic elements that can be used to define different parts of a web page:</p>
+    <ul>
+        <li>&lt;article&gt;</li>
+        <li>&lt;aside&gt;</li>
+        <li>&lt;details&gt;</li>
+        <li>&lt;figcaption&gt;</li>
+        <li>&lt;figure&gt;</li>
+        <li>&lt;footer&gt;</li>
+        <li>&lt;header&gt;</li>
+        <li>&lt;main&gt;</li>
+        <li>&lt;mark&gt;</li>
+        <li>&lt;nav&gt;</li>
+        <li>&lt;section&gt;</li>
+        <li>&lt;summary&gt;</li>
+        <li>&lt;time&gt;</li>
+    </ul>
+    <hr>
+
+    <h2>HTML &lt;section&gt; Element</h2>
+
+    <p>The &lt;section&gt; element defines a section in a document.</p>
+    <p>According to W3C's HTML documentation: "A section is a thematic grouping of content, typically with a heading."</p>
+    <p>Examples of where a &lt;section&gt; element can be used:</p>
+    <ul>
+        <li>Chapters</li>
+        <li>Introduction</li>
+        <li>New items</li>
+        <li>Contact information</li>
+    </ul>
+    <p>A web page could normally be split into sections for introduction, content, and contact information.</p>
+    <hr>
+
+    <h2>HTML &lt;article&gt; Element</h2>
+
+    <p>The &lt;article&gt; element specifies independent, self-contained content.</p>
+    <p>An article should make sense on its own, and it should be possible to distribute it independently from the rest of the web site.</p>
+    <p>Examples of where the &lt;article&gt; element can be used:</p>
+    <ul>
+        <li>Forum posts</li>
+        <li>Blog posts</li>
+        <li>User comments</li>
+        <li>Product cards</li>
+        <li>New paper articles</li>
+    </ul>
+    <hr>
+
+    <h2>Nesting &lt;article&gt; in &lt;section&gt; or Vice Versa?</h2>
+
+    <p>The &lt;header&gt; element represents a container for introductory content or a set of navigational links.</p>
+    <p>A &lt;header&gt; element typically contains:</p>
+    <ul>
+        <li>one or more heading elements (&lt;h1&gt; - &lt;h2&gt;)</li>
+        <li>logo or icon</li>
+        <li>authorship information</li>
+    </ul>
+    <p>Note: You can have several &lt;header&gt; elements in one HTML document. However, &lt;header&gt; cannot be placed within a &lt;footer&gt;, &lt;address&gt; or another &lt;header&gt; element.</p>
+    <hr>
+
+    <h2>HTML &lt;footer&gt; Element</h2>
+
+    <p>The &lt;footer&gt; element defines a footer for a document or section.</p>
+    <p>A &lt;footer> element typically contains:</p>
+    <ul>
+        <li>authorship information</li>
+        <li>copyright information</li>
+        <li>contact information</li>
+        <li>sitemap</li>
+        <li>back to top links</li>
+        <li>related documents</li>
+    </ul>
+    <p>You can have several &lt;footer> elements in one document.</p>
+    <hr>
+
+    <h2>HTML &lt;nav> Element</h2>
+
+    <p>The &lt;nav> element defines a set of navigation links.</p>
+    <p>Notice that NOT all links of a document should be inside a &lt;nav> element. The &lt;nav> element is intended only for major block of navigation links.</p>
+    <p>Browsers, such as screen readers for disabled users, can use this element to determine whether to omit the initial rendering of this content.</p>
+    <hr>
+
+    <h2>HTML &lt;aside> Element</h2>
+
+    <p>The &lt;aside> element defines some content aside from the content it is placed in (like a sidebar).</p>
+    <p>The &lt;aside> content should be indirectly related to the surrounding content.</p>
+    <hr>
+
+    <h2>HTML &lt;figure> and &lt;figcaption> Elements</h2>
+
+    <p>The &lt;figure> tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.</p>
+    <p>The &lt;figcaption> tag defines a caption for a &lt;figure> element. The &lt;figcaption> element can be placed as the first or as the last child of a &lt;figure> element.</p>
+    <p>The &lt;img> element defines the actual image/illustration. </p>
+    <hr>
+
+    <h2>Why Semantic Elements?</h2>
+    <p>According to the W3C: "A semantic Web allows data to be shared and reused across applications, enterprises, and communities."</p>
+    <hr>
+
+    <h2>Semantic Elements in HTML</h2>
+    <p>Below is a list of some of the semantic elements in HTML.</p>
+
+    <table>
+        <tr>
+            <th class="col1">Tag</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>&lt;article></td>
+            <td>Defines independent, self-contained content</td>
+        </tr>
+        <tr>
+            <td>&lt;aside></td>
+            <td>Defines content aside from the page content</td>
+        </tr>
+        <tr>
+            <td>&lt;details></td>
+            <td>Defines additional details that the user can view or hide</td>
+        </tr>
+        <tr>
+            <td>&lt;figcaption></td>
+            <td>Defines a caption for a &lt;figure> element</td>
+        </tr>
+        <tr>
+            <td>&lt;figure></td>
+            <td>Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.</td>
+        </tr>
+        <tr>
+            <td>&lt;footer></td>
+            <td>Defines a footer for a document or section</td>
+        </tr>
+        <tr>
+            <td>&lt;header></td>
+            <td>Specifies a header for a document or section</td>
+        </tr>
+        <tr>
+            <td>&lt;main></td>
+            <td>Specifies the main content of a document</td>
+        </tr>
+        <tr>
+            <td>&lt;mark></td>
+            <td>Defines marked/highlighted text</td>
+        </tr>
+        <tr>
+            <td>&lt;nav></td>
+            <td>Defines navigation links</td>
+        </tr>
+        <tr>
+            <td>&lt;section></td>
+            <td>Defines a section in a document</td>
+        </tr>
+        <tr>
+            <td>&lt;summary></td>
+            <td>Defines a visible heading for a &lt;details> element</td>
+        </tr>
+        <tr>
+            <td>&lt;time></td>
+            <td>Defines a date/time</td>
+        </tr>
+    </table>
+</body>
+</html>
