@@ -1,0 +1,102 @@
+img {
+    height: 200px;
+}
+
+input {
+    height: 0px;
+    width: 0px;
+}
+
+/*red*/
+
+input#red:checked ~ .red{
+    color: white;
+    background: darkred;
+    display: inline-block;
+    padding: 5px; /*Внутріші поля*/
+    margin: 5px; /*Зовнішні поля*/
+    border-radius: 5px;
+}
+
+.red{
+    display: none;
+}
+
+input#red:checked ~ label[for="red"]{
+    color: darkred;
+    display: inline-block;
+    padding: 5px; /*Внутріші поля*/
+    margin: 5px; /*Зовнішні поля*/
+    text-decoration: underline;
+}
+
+label[for="red"]{
+    color: red;
+    display: inline-block;
+    padding: 5px; /*Внутріші поля*/
+    margin: 5px; /*Зовнішні поля*/
+    text-decoration: underline;
+}
+
+/*green*/
+
+input#green:checked ~ .green{
+    color: white;
+    background: darkgreen;
+    display: inline-block;
+    padding: 5px; /*Внутріші поля*/
+    margin: 5px; /*Зовнішні поля*/
+    border-radius: 5px;
+}
+
+.green{
+    display: none;
+}
+
+input#green:checked ~ label[for="green"]{
+    color: darkgreen;
+    display: inline-block;
+    padding: 5px; /*Внутріші поля*/
+    margin: 5px; /*Зовнішні поля*/
+    text-decoration: underline;
+}
+
+label[for="green"]{
+    color: green;
+    display: inline-block;
+    padding: 5px; /*Внутріші поля*/
+    margin: 5px; /*Зовнішні поля*/
+    text-decoration: underline;
+}
+
+/*blue*/
+
+
+input#blue:checked ~ .blue{
+    color: white;
+    background: darkblue;
+    display: inline-block;
+    padding: 5px; /*Внутріші поля*/
+    margin: 5px; /*Зовнішні поля*/
+    border-radius: 5px;
+}
+
+.blue{
+    display: none;
+}
+
+input#blue:checked ~ label[for="blue"]{
+    color: darkblue;
+    display: inline-block;
+    padding: 5px; /*Внутріші поля*/
+    margin: 5px; /*Зовнішні поля*/
+    text-decoration: underline;
+}
+
+label[for="blue"]{
+    color: blue;
+    display: inline-block;
+    padding: 5px; /*Внутріші поля*/
+    margin: 5px; /*Зовнішні поля*/
+    text-decoration: underline;
+}
