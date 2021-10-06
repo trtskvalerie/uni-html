@@ -1,0 +1,33 @@
+table {
+    margin: 10% 30% 10% 30%;
+    width: 40%;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+td {
+    border: 1px solid black;
+    text-align: center;
+    height: 45px;
+    position: relative;
+}
+
+tr:nth-child(even) {
+    background-color: #FFD6FC;
+}
+
+tr:nth-child(odd) {
+    background-color: #C2EDFF;
+}
+
+tr:first-child, tr:last-child, td:first-child {
+    background-color: #ff4096;
+}
+
+tr:hover, tr:hover td:first-child {
+    background-color: #ffffff;
+}
+
+.red {
+    background-color: #ffffff;
+}
